@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
+import { Button } from "@chakra-ui/react";
 import "./App.css";
 
 function App() {
-	return <div>Project Time</div>;
+	return <Button colorScheme="blue">Button</Button>;
 }
 
 export default App;
