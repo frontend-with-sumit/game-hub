@@ -12,7 +12,7 @@ interface Props {
 function PlatformSelector({ selectedPlatform, onSelectPlatform }: Props) {
 	const { data } = usePlatforms();
 	return (
-		<Menu>
+		<Menu isLazy>
 			<MenuButton as={Button} rightIcon={<BsChevronDown />}>
 				{selectedPlatform?.name || "Platforms"}
 			</MenuButton>
