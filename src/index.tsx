@@ -4,6 +4,7 @@ import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import App from "./App";
 import theme from "./theme";
 import reportWebVitals from "./reportWebVitals";
+import "./index.css";
 
 import "bootstrap/dist/css/bootstrap.css";
 
