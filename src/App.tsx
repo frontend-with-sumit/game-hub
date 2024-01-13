@@ -8,8 +8,6 @@ import NavBar from "./components/NavBar";
 import PlatformSelector from "./components/PlatformSelector";
 import SortSelector from "./components/SortSelector";
 
-import { Platform } from "./hooks/usePlatforms";
-
 import "./App.css";
 
 export interface GameQuery {
