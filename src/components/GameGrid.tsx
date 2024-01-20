@@ -3,15 +3,12 @@ import React from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 import useGames from "../hooks/useGames";
-import useGameQueryStore from "../store";
 import GameCard from "./GameCard";
 import GameCardContainer from "./GameCardContainer";
 import GameCardSkeleton from "./GameCardSkeleton";
 
 function GameGrid() {
-	const gameQuery = useGameQueryStore((s) => s.gameQuery);
-	const { data, error, isLoading, fetchNextPage, hasNextPage } =
-		useGames();
+	const { data, error, isLoading, fetchNextPage, hasNextPage } = useGames();
 	const skeletons = [1, 2, 3, 4, 5, 6];
 
 	const fetchGamesCount =
